@@ -1,0 +1,38 @@
+@echo off
+titel latihan7 inputan persegi panjang 
+
+rem variabel dan inputan 
+set /p p= masukan panjang bangunan :
+set /p i= masukan lebar bangunan :
+
+set /a iuas = p*i
+
+if%luas%GEQ 500 (
+    set grade= kategori besar
+) else if%luas% GEQ 100 (
+       set grad= kategori sedang
+) else (
+     set grade= kategori kecil
+)
+
+cls
+ram output 
+echo-----------------------------------------------
+echo            data luas bangnan 
+echo-----------------------------------------------
+echo panjang bagunan :%p%
+echo lebar bangunan  :%i%
+echo luas bangunan   :%luas%
+echo kategori        :%grade%
+echo-----------------------------------------------
+
+rem cetak 
+echo----------------------------------------------->>hasil.txt
+echo data luas bangunan >>hasil.txt
+echo----------------------------------------------->>hasil.txt
+echo panjang bangunan  :%p%>>hasil.txt
+echo lebar bangunan    :%i%>>hasil.txt
+echo luas bangunan     :%luas%>>hasil.txt
+echo kategori          :%grade%>>hasil.txt
+echo----------------------------------------------->>hasil.txt
+paus
