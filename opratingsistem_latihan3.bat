@@ -8,11 +8,11 @@ echo 3. Exit
 echo 4. dddd
 set /p pilihan=pilih menu anda:
 
-if %pilihan%==1(
+if %pilihan%==1 (
   goto 1
-) else if %pilihan%==2 (
+)else if %pilihan%==2 (
   goto 2
-) else if %pilihan%==3 (
+)else if %pilihan%==3 (
   goto 3
 )
  
