@@ -2,7 +2,6 @@
 
 setlocal
 
-set "username=nicko"
 set "password=milikbersama"
 
 :login
@@ -22,11 +21,7 @@ if "%input_username%"=="%username%" (
         timeout /t 3 >nul
         goto login
     )
-) else (
-    echo Username tidak dikenal. Silakan coba lagi.
-    timeout /t 3 >nul
-    goto login
-)
+) 
 
 endlocal
 
